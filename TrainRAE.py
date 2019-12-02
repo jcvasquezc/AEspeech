@@ -3,7 +3,7 @@
 from SpecDatset import SpecDataset
 import time
 import torch
-from RAEfullcat import RAEn
+from RAE import RAEn
 import numpy as np
 import sys
 #import pandas as pd
