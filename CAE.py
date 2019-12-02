@@ -3,6 +3,7 @@ from torch import nn, optim
 import torch.nn.functional as F
 
 
+
 class CAEenc(nn.Module):
     def __init__(self, dim=256, nc=1):
         super().__init__()
@@ -15,6 +16,7 @@ class CAEenc(nn.Module):
         self.bn3 = nn.BatchNorm2d(64)
         self.conv4=nn.Conv2d(64, 128, kernel_size=3, stride=1, padding=1, bias=False)
         self.bn4 = nn.BatchNorm2d(128)
+
         self.linear = nn.Linear(128*8*7, dim)
 
     def forward(self, x):
@@ -62,5 +64,4 @@ class CAEn(nn.Module):
         bottleneck = self.encoder(x)
         x = self.decoder(bottleneck)
         return x, bottleneck
-
 
