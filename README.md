@@ -1,5 +1,9 @@
 # AEspeech
 
+
+
+[![DOI](https://zenodo.org/badge/185946874.svg)](https://zenodo.org/badge/latestdoi/185946874)
+
 Feature extraction from speech signals using pre-trained autoencoders
 
 This repository contains the architecture and trained models for the paper "Parallel Representation Learning for the Classification of Pathological Speech: studies on Parkinson's Disease and Cleft Lip and Palate", submitted Speech Communications, 2020
