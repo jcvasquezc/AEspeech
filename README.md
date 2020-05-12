@@ -1,18 +1,12 @@
 # AEspeech
 
-
-
 Feature extraction from speech signals using pre-trained autoencoders
 
 This repository contains the architecture and trained models for the paper "Parallel Representation Learning for the Classification of Pathological Speech: studies on Parkinson's Disease and Cleft Lip and Palate", submitted Speech Communications, 2020
 
-
-
 ## Feature extraction from speech signals using the pre-trained models
 
  See [`examples`](examples.py) for usage.
-
-
 
 ```python
     PATH=os.path.dirname(os.path.abspath(__file__))
@@ -54,3 +48,23 @@ In order to train new autoencoders with additional data, please check
 1. [`get_spec_full`](get_spec_full.py) to generate the input spectrogras to train the models.
 
 2. [`TrainCAE`](TrainCAE.py) or  [`TrainRAE`](TrainRAE.py) to train a convolutional or recurrent autoencoder, respectively.
+
+
+## Reference
+If AEspeech is used for your own research please cite the following publication: Parallel Representation Learning for the Classification of Pathological Speech: Studies on Parkinson's Disease and Cleft Lip and Palate
+```
+@article{vasquez2020parallel,
+author = {Vasquez-Correa, J. C. and Arias-Vergara T. and Schuster, M. and Orozco-Arroyave, J. R. and Nöth, E.},
+year = {2020},
+month = {},
+pages = {},
+title = {Parallel Representation Learning for the Classification of Pathological Speech: Studies on Parkinson's Disease and Cleft Lip and Palate},
+volume = {},
+journal = {Speech communication (Under review)},
+doi = {}
+}
+```
+## License
+MIT License Copyright (c) 2020 J. C. Vasquez-Correa
+
+
